@@ -126,6 +126,190 @@
         <!--Final do slider container-->
         </section>
     </main>
+     <!-- Início do banner -->
+     <section class="container" id="container-banner">
+        <section class="row">
+
+            <section class="col-12">
+                <h4 class="title">Definições CRUD</h4>
+            </section>
+
+            <section class="col-12 col-md-3">
+                <section class="card">
+
+                    <section class="card-body texto">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <h4 class="card-title">Create - Inserir</h4>
+                        <p class="card-text">
+                            Esta operação do CRUD realiza a inserção de novos itens em uma base de dados!
+                        </p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCreate">
+                            Incluir
+                        </button>
+                        <a href="" class="btn btn-outline-primary">Inserir</a>
+                        <a href="" class="btn btn-secondary">Salvar</a>
+
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-3">
+                <section class="card">
+                    <section class="card-body texto">
+                        <i class="bi bi-person-vcard-fill"></i>
+                        <h4 class="card-title">Read - Visualizar</h4>
+                        <p class="card-text">
+                            Esta operação do CRUD realiza a visualização dos registros em uma base de dados!
+                        </p>
+
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#modalView">Exibir
+                        </button>
+                        <a href="" class="btn btn-outline-success">Ver</a>
+                        <a href="" class="btn btn-secondary">Visualizar</a>
+
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-3">
+                <section class="card">
+
+                    <section class="card-body texto">
+                        <i class="bi bi-recycle"></i>
+                        <h4 class="card-title">Update - Atualizar</h4>
+                        <p class="card-text">
+                            Esta operação do CRUD realiza a atualização dos itens em uma base de dados!
+                        </p>
+                        <a href="" class="btn btn-warning">Alterar</a>
+                        <a href="" class="btn btn-outline-warning">Mudar</a>
+                        <a href="" class="btn btn-secondary">Trocar</a>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 col-md-3">
+                <section class="card">
+                    <section class="card-body texto">
+                        <i class="bi bi-trash3-fill"></i>
+                        <h4 class="card-title">Delete - Excluir</h4>
+                        <p class="card-text">
+                            Esta operação do CRUD realiza a exclusão de itens em uma base de dados!
+                        </p>
+                        <a href="" class="btn btn-danger">Excluir</a>
+                        <a href="" class="btn btn-outline-danger">Apagar</a>
+                        <a href="" class="btn btn-secondary">Deletar</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+</main>
+
+
+<!-- Área de modais -->
+
+<!-- Modal Create -->
+<section class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <section class="modal-dialog modal-dialog-centered modal-md">
+        <section class="modal-content">
+            <section class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Cliente</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </section>
+            <section class="modal-body">
+            <!--Formulario-->
+            <form>
+                <div class="form-group row">
+
+                  <div class="form-group col-md-3">
+                    <label for="inputCPF">CPF</label>
+                    <input type="text" class="form-control" id="inputCPF" placeholder="Seu CPF">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="inputnome">Nome</label>
+                    <input type="text" class="form-control" id="inputnome" placeholder="Nome Completo">
+                  </div>
+                     
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Endereço 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control">
+                      <option selected>Escolher...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Clique em mim
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
+            </section>
+            <section class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </section>
+        </section>
+    </section>
+</section>
+
+<!-- Modal View -->
+<section class="modal fade" id="modalView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <section class="modal-dialog modal-dialog-centered modal-sm">
+        <section class="modal-content">
+            <section class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </section>
+            <section class="modal-body"></section>
+            </section>
+            <section class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Visualizar</button>
+            </section>
+        </section>
+    </section>
+</section>
+<footer></footer>
 
 
     <footer></footer>
